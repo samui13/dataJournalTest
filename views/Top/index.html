@@ -3,12 +3,22 @@
 <html lang="ja">
   <head>
     <script src="/static/js/jquery-2.0.3.min.js"></script>
+    <script src="/static/js/myjquery.js"></script>
+    <script src="/static/js/mustache.js"></script>
     <link rel="stylesheet" href="/static/css/bootstrap.min.css"></link>
+    
+    <script src="/static/js/test.js"></script>
   </head>
   <body>
     <div class="container">
       <h1>ホンの本と</h1>
       {{name}}
+      <button onclick="userUI.getAround();">Around</button>
+      <button onclick="userUI.getAll(2,5);">All</button>
+      <div class="row">
+	<div id="myMaps" class="col-md-6"></div>
+	<div id="mapData" class="col-md-6"></div>
+      </div>
     </div>
   <!-- Latest compiled and minified JavaScript -->
   <script src="/static/js/bootstrap.min.js"></script>
