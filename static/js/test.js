@@ -9,7 +9,7 @@ userUI.getAround = function(){
 };
 userUI.getAll = function(offset,limit){
     userUI.beforeButton();
-    var t = $.fn.deferrAjax('./json/all?l10');
+    var t = $.fn.deferrAjax('./json/all?l=10');
     return userUI.setHtml(t);
 };
 

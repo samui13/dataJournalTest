@@ -16,7 +16,12 @@
       <button onclick="userUI.getAround();">Around</button>
       <button onclick="userUI.getAll(2,5);">All</button>
       <div class="row">
-	<div id="myMaps" class="col-md-6"></div>
+	<div id="myMaps" class="col-md-6">
+	  <ul>
+	    <li><a href="./json/radius?r=10">半径10km圏内にあるスポットをひろう</a></li>
+	    <li><a href="./json/all?l=10">10番目から全データをひろう</a></li>
+	  </ul>
+	</div>
 	<div id="mapData" class="col-md-6"></div>
       </div>
     </div>
